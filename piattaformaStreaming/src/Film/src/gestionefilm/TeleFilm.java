@@ -48,6 +48,11 @@ public class TeleFilm {
         return false;
     }
 
+    /**un metodo che ordina il vettore delle stagioni in base al numero della stagione, dalla prima all'ultima.
+     */
+    public int numStagioni(){
+        
+    }
 
     public String getTitolo() {
         return titolo;
