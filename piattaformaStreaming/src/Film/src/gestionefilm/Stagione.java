@@ -15,7 +15,9 @@ public class Stagione {
         this.numStagione = numStagione;
     }
 
-    
+    public Stagione(){
+        
+    }
     public int getNumEpisodi() {
         return numEpisodi;
     }
