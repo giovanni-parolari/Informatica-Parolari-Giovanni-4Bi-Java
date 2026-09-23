@@ -45,7 +45,23 @@ public class TeleFilm {
         }
         return false;
     }
-        
+
+    /**
+     * Ordina il vettore delle stagioni in base al numero della stagione,
+     * dalla prima all'ultima.
+     */
+    public void ordinaStagioni() {
+        for (int i = 0; i < numStagioni.length - 1; i++) {
+            for (int j = 0; j < numStagioni.length - 1 - i; j++) {
+                if (numStagioni[j].getNumStagione() > numStagioni[j + 1].getNumStagione()) {
+                    Stagione temp = numStagioni[j];
+                    numStagioni[j] = numStagioni[j + 1];
+                    numStagioni[j + 1] = temp;
+                }
+            }
+        }
+    }
+
 
     public String getTitolo() {
         return titolo;
